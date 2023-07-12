@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexEmail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+        <form action="" name="main-form" class="main-form">
+            <h1 class="title-form">Відправлення форми на пошту</h1>
+            <div class="form-block input">
+                <label for="inputName" class="label-block">Ведіть ім'я</label>
+              <input type="text" id="inputName"class="input-block"> 
+            </div>
+            <div class="form-block input">
+                <label for="inputEmail" class="label-block">Ведіть емеіл</label>
+              <input type="email" id="inputEmail"class="input-block"> 
+            </div>
+            <div class="form-block">
+                <p class="paragraph-title"> Виберіть значення</p>
+                <div class="one">
+                <input checked  type="radio" name="knopka"  id="radioInputOne" class="radio" >
+                <label for="radioInputOne"  class="lable-radio"><span>Перше</span></label>
+            </div>
+            <div class="one">
+                <input type="radio" id="radioInputTwo" name="knopka" class="radio">
+                <label for="radioInputTwo" class="lable-radio"> <span>Друге</span></label>
+            </div>
+            </div>
+            <div class="form-block input">
+                <label for="textarea" class="label-block" >Повідомлення</label>
+             <textarea name="textareaName" id="textarea"class="input-block textarea"></textarea> 
+            </div>
+            <div class="form-block">
+                <label for="selectInput" class="label-block">Вкажіть статус</label>
+               <select name="staus" id="selectInput" class="input-select">
+                <option value="" selected>Не одружений</option>
+                <option value="">Одружений</option>
+                <option value="">Все складно</option>
+               </select>
+            </div>
+            <div class="form-block">
+                <p class="paragraph-title"> Виберіть значення</p>
+                <div class="file">
+                 <div class="foto">
+                    <input type="file" class="input-file">
+                    <div class="file-button">Вибрати</div>
+                 </div>  
+                 <div class="prewiew-file"></div>
+                </div>
+                
+            </div>
+            <div class="form-block">
+                <div class="checkbox">
+                    <input type="checkbox"  id="checkboxInput" class="check-box">
+                    <label for="checkboxInput" class="label-block label-checkbox"><span> Я даю згоду на оброблення своїх персональних <a href="#" class="link-input">данних</a>   </span> </label>
+                </div>
+            </div>
+            <div class="form-block">
+                <button type="submit" disabled class="send"> Відправити форму</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script type="module" src="indexEmail.js"></script>
+</body>
+</html>
